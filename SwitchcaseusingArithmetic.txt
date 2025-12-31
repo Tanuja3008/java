@@ -1,0 +1,43 @@
+package com.Programming_Practice;
+import java.util.Scanner;
+public class SwitchcaseusingArithmetic {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println(" Enter the 1st Number ");
+		int a = scanner.nextInt();
+		
+		System.out.println("Enter the 2nd Number ");
+		int b = scanner.nextInt();
+		
+		System.out.println("choose tne Opration to perform");
+		System.out.println(" 1 . Addition ");
+		System.out.println(" 2 . Substration");
+		System.out.println(" 3 . Multiplication");
+		System.out.println(" 4 . Division");
+		int choice = scanner.nextInt();
+		
+		
+		switch(choice) {
+		case 1:
+			System.out.println("The Addition is " + (a+b) );
+		break ;
+		
+		case 2 :
+			System.out.println("The Substration is " + (a-b) );
+		break ;
+		
+		case 3 :
+			System.out.println("The Multiplication is " + (a*b) );
+		break;
+		case 4 :
+			System.out.println("The Division is " + (a/b));
+		break;
+		
+		default :
+			System.out.println("Invalid choice please enter the valid choice");
+			}
+		scanner.close();
+		}
+	}
